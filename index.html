@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Gift Predictor</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="valentine-container">
+        <h1>💝 Valentine's Gift Predictor 💝</h1>
+        <div class="quiz-container">
+          <div class="question-container">
+            <label for="partner-name">Your Partner's Name ❤️</label>
+            <input type="text" id="partner-name" class="input-field" placeholder="Enter their name" required>
+
+            <label for="partner-age">Their Age 🎂</label>
+            <input type="number" id="partner-age" class="input-field" placeholder="Enter their age" min="18" max="120" required>
+
+            <label for="budget">What's your budget? 💰</label>
+            <select id="budget" class="input-field">
+              <option value="low">₹500-1000</option>
+              <option value="medium">₹1000-2000</option>
+              <option value="high">₹2000+</option>
+            </select>
+
+            <label for="relationship">Relationship Length? ⏳</label>
+            <select id="relationship" class="input-field">
+              <option value="new">Just started dating</option>
+              <option value="established">Few months to a year</option>
+              <option value="long">Over a year</option>
+            </select>
+
+            <label for="interests">Their Main Interest? 💭</label>
+            <select id="interests" class="input-field">
+              <option value="art">Art & Decor</option>
+              <option value="light">Lighting & Ambiance</option>
+              <option value="flowers">Flowers & Romance</option>
+              <option value="comfort">Comfort & Home</option>
+            </select>
+
+            <button id="predict-btn" class="predict-button">Predict Perfect Gift! 🎁</button>
+          </div>
+
+          <div id="result" class="result-container hidden">
+            <h2>Your Perfect Gift Is...</h2>
+            <div id="gift-display"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
