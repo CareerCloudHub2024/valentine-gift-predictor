@@ -116,11 +116,11 @@ input[type="number"].input-field::-webkit-inner-spin-button {
   color: white;
   border: none;
   padding: 1rem 2rem;
+  margin-top: 1rem;
   font-size: 1.2rem;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  /* margin-top: 1rem;  */
 }
 
 .predict-button:hover {
